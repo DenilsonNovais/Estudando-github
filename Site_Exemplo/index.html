@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        h2 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-family: sans-serif;
+            text-align: justify;
+        }
+
+        fieldset {
+            border: 0;
+            display: block;
+        }
+
+        .grupo:before, .grupo:after {
+            display: table;
+        }
+
+        .grupo:after {
+            clear: both;
+        }
+
+        .campo {
+            margin-bottom: 1em;
+        }
+
+        .campo label {
+            margin-bottom: 0.2em;
+            margin-left: 7px;
+            color: white;
+            display: block;
+        }
+
+        .campo input {
+            padding: 3px;
+            margin-right: 50px;
+            margin-left: 7px;
+        }
+
+        fieldset.grupo .campo {
+            float:  left;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo ao meu site</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cupiditate et exercitationem soluta, explicabo sequi voluptates laudantium cum pariatur, illum veritatis modi nobis. Mollitia reprehenderit vitae, porro cum quis atque!</p>
+
+    <h2>Cadastre-se</h2>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="name">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
